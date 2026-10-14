@@ -1,11 +1,11 @@
-# **1. ensure that netcat is installed**
+# **1. Ensure that netcat is installed**
 
 ```
 sudo apt update && sudo apt install netcat-traditional -y
 sudo update-alternatives --set nc /bin/nc.traditional
 ```
 
-# **2. add the api under test user**
+# **2. Add the api under test user**
 
 the path should be something like ```/home/test_user/api.sh```
 
@@ -38,8 +38,8 @@ WantedBy=multi-user.target
 Then reload the daemon and start the service by hand
 ```
 sudo systemctl daemon-reload
-sudo systemctl enable custome.service
-sudo systemctl start custome.service
+sudo systemctl enable api.service
+sudo systemctl start api.service
 ```
 # **4. Setup the firewall**
 - First Obtain your IP
