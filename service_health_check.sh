@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#cronjob example
+# */5 * * * * /home/test_user/service_health_check.sh custom.service
+
 # checks if an argument was provided
 if [ -z "$1" ]; then
     echo "Error: No service name provided."
