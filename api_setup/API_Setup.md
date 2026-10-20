@@ -46,7 +46,16 @@ sudo systemctl start api.service
 - Second in the google cloud console navigate to **VPC Network** > **Firewall**
 - Set target tags to Allow all Network Targets
 - Third (for testing there is allow-evan-laptop) Create a rule allowing Ingress traffic on tcp:8080, 8081, 8082, 8083, 8084
-- Fourth Set the Source IPv4 ranges to your client machine's IP address with a /32
+- Fourth Set the Source IPv4 ranges to your client machine's IP address with a /32 (MAKE SURE THE IP IS CORRECT)
+
+Linux
+```
+curl -4 ifconfig.me
+```
+Windows
+```
+curl.exe -4 ifconfig.me
+```
 
 # **5. Test the Connection**
 You can run this command to test the connection (the external ip of the vm needs to be added to the firewall to work)
