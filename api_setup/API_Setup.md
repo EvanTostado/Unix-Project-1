@@ -44,7 +44,7 @@ sudo systemctl start api.service
 # **4. Setup the firewall**
 - First Obtain your IP
 - Second in the google cloud console navigate to **VPC Network** > **Firewall**
-- Third (for testing there is allow-evan-laptop) Create a rule allowing Ingress traffic on tcp:8080
+- Third (for testing there is allow-evan-laptop) Create a rule allowing Ingress traffic on tcp:8080, 8081, 8082, 8083, 8084
 - Fourth Set the Source IPv4 ranges to your client machine's IP address with a /32
 
 # **5. Test the Connection**
