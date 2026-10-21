@@ -36,8 +36,3 @@ while true; do
         echo "$date: Starting context switchinng stress" >> "$LOG"
         run_stress --switch 1 --timeout 30s --metrics-brief
 done
-
-        echo "$date: Starting context switchinng stress" >> "$LOG"
-        run_stress --switch 1 --timeout 30s --metrics-brief
-
-done
