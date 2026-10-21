@@ -30,4 +30,10 @@ while true; do
         echo "$(date): Disk stress" >> "$LOG"
         run_stress -hdd 1 -hdd-bytes 64M --timeout 30s --metrics-brief
 
+        echo "$(date): Starting network socket stress" >> "$LOG"
+        run_stress --sock 1 --timeout 30s --metrics-brief
+
+        echo "$date: Starting context switchinng stress" >> "$LOG"
+        run_stress --switch 1 --timeout 30s --metrics-brief
+
 done
